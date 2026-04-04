@@ -1,0 +1,23 @@
+{
+  "name": "aisaka-grid",
+  "version": "1.0.50",
+  "description": "Roblox RCCService SOAP client implementation",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "bun build ./src/index.ts --outdir ./dist --target node",
+    "prepublishOnly": "bun run build"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.5.10"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "typescript": "latest"
+  },
+  "license": "MIT"
+}
